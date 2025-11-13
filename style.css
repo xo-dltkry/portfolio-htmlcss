@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 12px 20px;
+  position: sticky;   
+  top: 0;
+  
+}
+
+.navbar ul {
+  list-style-type: none;
+  background-color: black; 
+  overflow: hidden;
+  border: 2px solid rgb(78, 78, 78);
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.navbar a:hover {
+  background-color: rgb(77, 77, 77);
+}
+
+.navbar li {
+  float: left;
+}
+
+.container-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  width: 100%;
+  text-align: center;
+}
+
+.hero-second hr {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.hero-h1 {
+  font-size: 4rem;
+}
+
+.hero-h3 {
+  font-size: 1.5rem;
+  font-weight: 250;
+  font-style: italic;
+}
+
+.page { 
+  display: none; 
+  padding: 2rem; 
+}
+  
+.page.active { 
+  display: block; 
+}
+
+#about {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-top: 100px;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  padding-left: 76px;
+  gap: 15%;
+}
+
+.my-photo {
+  height: 600px;
+  width: 400px;
+}
+
+#about h2 {
+  font-size: 3.6rem;
+  color: white;
+}
+
+#about h4 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: white;
+}
+
+.container-about hr{
+  margin-right: 135px;
+}
+
+.container-about h2 {
+  padding-bottom: 20px;
+}
+
+.container-about h4 {
+  padding-top: 20px;
+}
+
+#experience {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 100px;
+  margin-left: 76px;
+  margin-bottom: 14.5%;
+}
+
+#experience h3 {
+  font-size: 2.25rem;
+  margin-bottom: 20px;
+}
+
+.relevant-experience hr {
+  margin-right: 60%;
+}
+
+.text-semibold {
+  font-weight: 250;
+}
+
+.text-thin {
+  font-weight: 250;
+  color: gray;
+}
+
+.text-thin.last {
+  padding-bottom: 50px;
+}
+
+.jobs h4 {
+  font-size: 1.35rem;
+}
+
+#education {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: black;
+  gap: 2rem;
+  padding-left: 76px;
+  padding-right: 76px;
+  padding-bottom: 12.75%;
+  padding-top: 12%;
+}
+
+.text-education {
+  grid-column: span 2;
+}
+
+#education h2 {
+  font-size: 3.4rem;
+  color: white;
+  padding-bottom: 25px;
+}
+
+.study-name {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.school-year {
+  font-size: 1.2rem;
+  font-weight: 450;
+  font-style: italic;
+  color: rgb(202, 198, 198);
+  padding-bottom: 20px;
+}
+
+.school-description {
+  font-weight: 400;
+  color: white;
+  font-size: 1.4rem
+}
+
+#skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+  margin-left: 76px;
+  padding-top: 12%;
+  margin-bottom: 3.25%;
+}
+
+.text-skills {
+  grid-area: 1 / 1 / 3 / 2;
+  padding-top: 160px;
+}
+
+.text-skills h3 {
+  font-size: 2.25rem;
+}
+
+.skills-name {
+  font-size: 1.7rem;
+  padding-bottom: 10px;
+}
+
+.skills-list {
+  font-size: 1.3rem;
+  color:rgb(77, 76, 76);
+  padding-bottom: 120px;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.9fr 1fr;
+  gap: 1rem;
+  padding-left: 76px;
+  padding-right: 76px;
+  padding-top: 8%;
+  padding-bottom: 9.1%;
+  background-color: black;
+}
+
+.project-img {
+  height: 200px;
+  width: 400px;
+}
+
+.text-projects {
+  grid-column: span 3;
+}
+
+.text-projects h3 {
+  color: white;
+  font-size: 2.25rem;
+}
+
+#projects h4 {
+  color: white;
+  font-size: 2rem;
+}
+
+#connect {
+  background-color: rgb(63, 62, 62);
+  display: block;
+  padding-left: 76px;
+  padding-top: 10%;
+  padding-bottom: 3.75%;
+}
+
+#connect hr {
+  margin-right: 76px;
+}
+
+#connect h2 {
+  font-size: 3.4rem;
+  color: white;
+  padding-bottom: 15px;
+}
+
+.credits {
+  margin-top: 100px;
+}
+
+.credits h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.credits h4 {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.credits a {
+  color: white;
+}
+
+.social-media {
+  margin-top: 100px;
+}
+
+.social-media h3 {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.bi-instagram {
+  margin-right: 8px;
+}
+
+.bi-linkedin {
+  margin-right: 8px;
+}
+
+.social-media a {
+  text-decoration: none;
+}
